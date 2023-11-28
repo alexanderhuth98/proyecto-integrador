@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+    gap: 1vw;
+    padding: 0.5vw;
+    width: calc(100% - (2*0.5vw));
+    font-size: 15px;
+
+
+}

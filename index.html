@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es.AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta pagina es una tienda de insumos de peluqueria y barberia">
+    <!-- al menos 30 keywords -->
+    <meta name="keywords" content="barberia,insumos,cortes,tijeras,filos,">
+    <meta name="author" content="Huth Simoni Alexander German">
+    <title>Papus's estilista</title>
+    <link rel="shortcut icon" href="./images/icons/favicon_Papu.jpg" type="image/jpg">
+    <!-- de 16 pixeles el icono -->
+    <link rel="shortcut" href="./images/icons/" type="images/icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="home">
+    <header class="header">
+        <div class="header__encabezado">
+            <div class="header__logo"><img src="./images/icons/favicon_Papu.png" alt="logoEmpresa"></div>
+            <h2 class="header__tittle">Papus's estilista</h2><span class=""></span>
+        </div>
+
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <!-- aca van los links a otras paginas -->
+                <li><a class="navbar__item active " href="./index.html">Home</li></a>
+                <!-- colocar el active a la pagina que estemos ocupando en el momento ej en home usar active home , en contactos usar active contactos -->
+                <li><a class="navbar__item" href="./index.html">sobre nosotros</li></a>
+                <li><a class="navbar__item" href="./index.html">contactos</li></a>
+                <label for="site-search"></label>
+                <input type="search" name="Buscar" id="site-search" placeholder="¿Que desea buscar?" />
+                <button onclick="search">Buscar</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section section--slider">
+            <div class="slider">
+                <div class="slider__one">
+                    <h4 class="slider__tittle">primer Slide</h4>
+                    <img class="slider__image" src="./images/banner/banner_01.png" alt="tarjeta con formas de pago">
+                </div>
+                <div class="slider__two">
+                    <h4 class="slider__tittle">segundo Slide</h4>
+                    <img class="slider__image" src="./images/banner/banner_02.png"
+                        alt="tarjeta de envios a todo el pais">
+                </div>
+                <div class="slider__three">
+                    <h4 class="slider__tittle">tercer Slide</h4>
+                    <img class="slider__image" src="./images/banner/banner_03.png" alt="tarjeta de black friday">
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--products">
+
+            <h3 id="section--products">Catalogo</h3>
+
+            <div class="productos">
+
+
+                <figure class="card card--product">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/gallery/img_01.jpg"
+                            alt="imagen de aceite para barba BEARD OIL">
+                    </div>
+
+                    <div class="card__info">
+                        <h4 class="card__tittle">aceite para barba BEARD OIL</h4>
+                        <p class="card__description">aceite para humectar la barba 30ml</p>
+                        <span class="card__price">6.500</span>
+                    </div>
+
+                    <div class="card__cart">
+                        <span class="card__counter"> <img src="./images/icons/cart3 (1).svg" alt="cart">0 </span>
+                        <button class="button button__add">agregar al carrito</button>
+                        <button class="button button__remove">quitar del carrito</button>
+                        <button class="button button__reset">reset</button>
+                    </div>
+                </figure>
+
+                <!--                                                                                producto2                                                   -->
+                <figure class="card card--product">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/gallery/img_02.jpg" alt="imagen de gel LORD CHESELINE">
+                    </div>
+
+                    <div class="card__info">
+                        <h4 class="card__tittle">gel LORD CHESELINE</h4>
+                        <p class="card__description">gel fijador para definicion y control del peinado 280grs</p>
+                        <span class="card__price">1200</span>
+                    </div>
+
+                    <div class="card__cart">
+                        <span class="card__counter"> <img src="./images/icons/cart3 (1).svg" alt="cart"> 0 </span>
+                        <button class="button button__add">agregar al carrito</button>
+                        <button class="button button__remove">quitar del carrito</button>
+                        <button class="button button__reset">reset</button>
+
+
+                    </div>
+                </figure>
+
+                <!--                                                                             producto3                                                          -->
+
+                <figure class="card card--product">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/gallery/img_03.jpg"
+                            alt="imagen de kit para afeitada MULTIMARCA">
+                    </div>
+
+                    <div class="card__info">
+                        <h4 class="card__tittle">kit para afeitada</h4>
+                        <p class="card__description">pomada para afeitada 100grs+ peine aplicador de cera + repuestos de
+                            filos
+                            x10 unidades</p>
+                        <span class="card__price">4400</span>
+                    </div>
+
+                    <div class="card__cart">
+                        <span class="card__counter"> <img src="./images/icons/cart3 (1).svg" alt="cart"> 0 </span>
+                        <button class="button button__add">agregar al carrito</button>
+                        <button class="button button__remove">quitar del carrito</button>
+                        <button class="button button__reset">reset</button>
+
+
+                    </div>
+
+                </figure>
+                <!--                                                                            producto4                                                                    -->
+
+                <figure class="card card--product">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/gallery/img_04.jpg"
+                            alt="imagen de kit de peines TONY & GUY">
+                    </div>
+                    <div class="card__info">
+                        <h4 class="card__tittle">kit para afeitada</h4>
+                        <p class="card__description">pomada para afeitada 100grs+ peine aplicador de cera + repuestos de
+                            filos x10 unidades
+                        </p>
+                        <span class="card__price">4400</span>
+                    </div>
+
+                    <div class="card__cart">
+
+                        <span class="card__counter"> <img src="./images/icons/cart3 (1).svg" alt="cart"> 0 </span>
+                        <button class="button button__add">agregar al carrito</button>
+                        <button class="button button__remove">quitar del carrito</button>
+                        <button class="button button__reset">reset</button>
+
+                    </div>
+
+                </figure>
+
+                <!--                                                                            producto5                                                                       -->
+
+
+
+                <figure class="card card--product">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/gallery/img_05.jpg"
+                            alt="imagen de gel para afeitar FIGARO">
+                    </div>
+
+                    <div class="card__info">
+                        <h4 class="card__tittle">gel para afeitar FIGARO 1000ml</h4>
+                        <p class="card__description">gel transparente para afeitada facil para trabajos finos de
+                            barberia
+                            1000ml
+                        </p>
+                        <span class="card__price">4500</span>
+                    </div>
+
+                    <div class="card__cart">
+                        <span class="card__counter">0</span>
+                        <button class="button  button__add">agregar al carrito</button>
+                        <button class="button  button__remove">quitar del carrito</button>
+                        <button class="button button__reset">reset</button>
+                    </div>
+
+                </figure>
+
+
+                <!--                                                                            producto6                                                           -->
+
+
+
+                <figure class="card card--product">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/gallery/img_06.jpg"
+                            alt="imagen de navaja tornasolada FORTEX">
+                    </div>
+
+                    <div class="card__info">
+                        <h4 class="card__tittle">Navaja tornasolada FORTEX</h4>
+                        <p class="card__description">Cuchilla navaja tornasolada para barberia profesional (no incluye
+                            filos
+                            de
+                            repuesto)
+                        </p>
+                        <span class="card__price">4000</span>
+                    </div>
+
+                    <div class="card__cart">
+                        <span class="card__counter">0</span>
+                        <button class="button  button__add">agregar al carrito</button>
+                        <button class="button  button__remove">quitar del carrito</button>
+                        <button class="button  button__reset">reset</button>
+                    </div>
+                </figure>
+
+                <!--                                                                            producto7                                                               -->
+
+
+                <figure class="card card--product">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/gallery/img_07.jpg"
+                            alt="imagen de tijeras tornasoladas FORTEX">
+                    </div>
+
+                    <div class="card__info">
+                        <h4 class="card__tittle">kit tijeras tornasoladas (2 dos unidades)</h4>
+                        <p class="card__description">tijera filo navaja tornasolada + tijera de pulir tornasolada FORTEX
+                        </p>
+                        <span class="card__price">30000</span>
+                    </div>
+
+                    <div class="card__cart">
+                        <span class="card__counter">0</span>
+                        <button class="button  button__add">agregar al carrito</button>
+                        <button class="button  button__remove">quitar del carrito</button>
+                        <button class="button  button__reset">reset</button>
+                    </div>
+                </figure>
+                <!--                                                                                        producto 8                                              -->
+
+                <figure class="card card--product">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/gallery/img_08.jpg"
+                            alt="imagen de tijeras negras y doradas STYLE_CUT">
+                    </div>
+
+                    <div class="card__info">
+                        <h4 class="card__tittle">kit tijeras negras y doradas (2 dos unidades)</h4>
+                        <p class="card__description">tijera filo navaja negra y dorada + tijera de pulir negra y dorada
+                            STYLE_CUT
+                        </p>
+                        <span class="card__price">32.000</span>
+                    </div>
+
+                    <div class="card__cart">
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button__add">agregar al carrito</button>
+                        <button class="button  button__remove">quitar del carrito</button>
+                        <button class="button  button__reset">reset</button>
+                    </div>
+                </figure>
+
+                <!--                                                                            producto9                                                           -->
+                <figure class="card card--product">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/gallery/img_09.jpg" alt="imagen de trimmer T-LINE B-WAY">
+                    </div>
+
+                    <div class="card__info">
+                        <h4 class="card__tittle">trimmer B-way con accesorios</h4>
+                        <p class="card__description">maquina para efectos de definicion B-WAY linea T-LINE recargable ,
+                            8
+                            piezas
+                            para regular la medida del corte con base cargadora
+                        </p>
+                        <span class="card__price">70.000</span>
+                    </div>
+                    <div class="card__cart">
+
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button__add">agregar al carrito</button>
+                        <button class="button  button__remove">quitar del carrito</button>
+                        <button class="button  button__reset">reset</button>
+                    </div>
+                </figure>
+
+                <!--                                                                        producto10                                                                      -->
+                <figure class="card card--product">
+                    <div class="card__img">
+                        <img class="card__image" src="./images/gallery/img_10.jpg" alt="imagen de finisher B-WAY">
+                    </div>
+                    <div class="card__info">
+                        <h4 class="card__tittle">finisher B-WAY</h4>
+                        <p class="card__description">afeitadora inhalambrica B-WAY con recarga USB con cabezales
+                            removibles
+                        </p>
+                        <span class="card__price">80000</span>
+                    </div>
+                    <div class="card__cart">
+
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button__add">agregar al carrito</button>
+                        <button class="button  button__remove">quitar del carrito</button>
+                        <button class="button  button__reset">reset</button>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__header">
+                <img src="./images/icons/favicon_Papu.png" alt="icon">
+                <div class="footer__contact">
+                    <ul>
+                        <li><a href="#">whatsapp</a></li>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">linkedin</a></li>
+                        <li><a href="#">discord</a></li>
+                        <li><a href="#">tiktok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__body">
+                <div class="footer__section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li>Tijeras</li>
+                        <li>Gel</li>
+                        <li>Maquinas</li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li>Origenes</li>
+                        <li>Galeria</li>
+                        <li>Institucion</li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Redes</li>
+                        <li>Consultas</li>
+                        <li>Ubicacion</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p>&copy; 2023 TODOS LOS DERECHOS</p>
+                <P>Pagina realizada por </P>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

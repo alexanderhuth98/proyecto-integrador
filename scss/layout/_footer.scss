@@ -1,0 +1,88 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.footer {
+
+    margin-top: 100px;
+
+
+
+    &__container {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+       
+
+
+        img {
+            width: auto;
+            height: 100px;
+        }
+
+
+
+    }
+
+
+
+    &__contact ul{
+
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        
+        
+                }
+
+
+&__body{
+
+display: grid;
+grid-template-columns: repeat(3,1fr);
+height: 250px;
+
+}
+
+
+&__section{
+
+
+padding: 30px;
+font-weight:300px;
+font-size: 1.5em;
+
+
+ul{
+
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+}
+
+
+
+&__copy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+}
+
+
+hr{
+border: 1px solid black ;
+width: 100%;
+}
+

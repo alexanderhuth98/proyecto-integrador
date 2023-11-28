@@ -1,0 +1,83 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+$_width: 100%;
+$_height: 60vh;
+
+
+.slider {
+    position: relative;
+    height: $_height;
+    width: 300%;
+    display: flex;
+    overflow: hidden;
+
+
+    animation-name: move-slide;
+    animation-duration: 30s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+
+    &__one,
+    &__two,
+    &__three {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    &__title {
+
+        display: none;
+    }
+
+    &__image {
+        width: $_width;
+        height: 90%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @keyframes move-slide {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -100%;
+        }
+
+        95% {
+            left: 0%;
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+}
